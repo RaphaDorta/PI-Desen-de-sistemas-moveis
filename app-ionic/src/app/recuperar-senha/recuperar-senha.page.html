@@ -1,0 +1,55 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-button slot="start" size="small" class="back-button">
+      <ion-icon slot="start" name="arrow-back" class="back-icon"></ion-icon>
+    </ion-button>
+    <ion-title color="light" class="title">Recuperar Senha</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="custom-content">
+  <body>
+    <header class="header">
+      <img src="assets/recuperarsenha_logo.png" alt="recuperar senha">
+      <h1>Recuperação de Senha</h1>
+      <p class="subtitle">Informe os dados do cadastro</p>
+    </header>
+  
+    <div class="container">
+      <form>
+        <div class="form-group">
+          <label for="email">E-mail:</label>
+          <input type="email" id="email" required>
+        </div>
+  
+        <div class="form-group">
+          <label for="cpf">CPF:</label>
+          <input type="text" id="cpf" required>
+        </div>
+  
+        <button type="submit" class="recover-button">Recuperar</button>
+      </form>
+    </div>
+  </body>
+</ion-content>
+
+<footer class="footer">
+  <div class="footer-toolbar">
+    <div class="footer-buttons footer-start">
+      <button class="footer-button">
+        <img src="assets/home.png" alt="Botão 1" class="footer-img"/>
+      </button>
+    </div>
+    <div class="footer-buttons footer-end">
+      <button class="footer-button">
+        <img src="assets/profile.png" alt="Botão 2" class="footer-img"/>
+      </button>
+    </div>
+    <div>
+      <button class="footer-button">
+        <img src="assets/search.png" alt="Botão 3" class="footer-img"/>
+      </button>
+    </div>
+  </div>
+</footer>
+
