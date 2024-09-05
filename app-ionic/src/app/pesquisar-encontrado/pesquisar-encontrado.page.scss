@@ -73,24 +73,24 @@ body {
 
 .header {
     color: #DA4C4C;
-    padding: 1rem;
+    padding: 2rem;
     text-align: center;
 }
 
 .header img {
     display: block;
-    margin: 5rem auto 3rem ; /* Adiciona margem superior e inferior e centraliza a imagem horizontalmente */
+    margin: 13rem auto 2rem ; /* Adiciona margem superior e inferior e centraliza a imagem horizontalmente */
 }
 
 .header .subtitle {
-    color: #b0b0b0; /* Cor cinza claro para o subtítulo */
-    margin: 0.5rem 0; /* Margem para ajustar o espaçamento */
+    color: #000000; /* Cor cinza claro para o subtítulo */
+    margin: 3rem 0 0; /* Margem para ajustar o espaçamento */
     font-size: 1rem;
 }
   
 .container {
     max-width: 600px;
-    margin: 2rem auto;
+    margin: 1rem auto;
     padding: 1rem;
     background-color: white;
     border-radius: 8px;
@@ -173,4 +173,16 @@ body {
 
 .recover-button:hover {
     background-color: #e23e3e;
+}
+
+input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+  
+input[type="date"]:focus {
+    border-color: #007bff;
+    outline: none;
 }

@@ -1,21 +1,24 @@
 <ion-header>
   <ion-toolbar color="primary">
-    <ion-button slot="start" size="small" color="light">
-      <ion-icon slot="start" name="arrow-back" color="dark"></ion-icon>
+    <ion-button slot="start" size="small" class="back-button">
+      <ion-icon slot="start" name="arrow-back" class="back-icon"></ion-icon>
     </ion-button>
-    <ion-title color="light">Busca Farma</ion-title>
+    <ion-title color="light" class="title">BuscaFarma</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
-  <div class="image-container">
-    <img src="assets/Capa.jpg" alt="Capa do App">
-    <div class="text-container">
-      <h2>Economize tempo e consulte seus medicamentos</h2>
-      <p>Evite deslocamentos desnecessários, consultando a disponibilidade dos medicamentos na farmácia popular.</p>
-      <ion-button id="botao-começar">Começar</ion-button>
+<ion-content [fullscreen]="true" class="custom-content">
+  <body>
+    <header class="header">
+      <img src="assets/erro.png" alt="recuperar senha">
+      <h1>Ops!!!</h1>
+      <p class="subtitle">Esse medicamento não está disponível no momento.</p>
+    </header>
+  
+    <div class="container">
+        <button type="submit" class="recover-button" [routerLink]="['/pesquisar']">Nova consulta</button>
     </div>
-  </div>
+  </body>
 </ion-content>
 
 <footer class="footer">
@@ -40,3 +43,4 @@
     </div>
   </div>
 </footer>
+

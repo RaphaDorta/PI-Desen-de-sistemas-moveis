@@ -174,3 +174,15 @@ body {
 .recover-button:hover {
     background-color: #e23e3e;
 }
+
+input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+  
+input[type="date"]:focus {
+    border-color: #007bff;
+    outline: none;
+}

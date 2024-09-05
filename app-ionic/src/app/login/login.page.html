@@ -10,46 +10,53 @@
 <ion-content [fullscreen]="true" class="custom-content">
   <body>
     <header class="header">
-      <img src="assets/recuperarsenha_logo.png" alt="recuperar senha">
-      <h1>Recuperação de Senha</h1>
-      <p class="subtitle">Informe os dados do cadastro</p>
+      <img src="assets/login.png" alt="recuperar senha">
+      <h1>Seja bem-vindo</h1>
+      <p class="subtitle">Efetue seu login na Busca Farma</p>
     </header>
   
     <div class="container">
       <form>
         <div class="form-group">
-          <label for="email">E-mail:</label>
+          <label for="email">Digite seu e-mail:</label>
           <input type="email" id="email" required>
         </div>
   
         <div class="form-group">
-          <label for="cpf">CPF:</label>
+          <label for="cpf">Senha:</label>
           <input type="text" id="cpf" required>
         </div>
-  
-        <button type="submit" class="recover-button">Recuperar</button>
+
+        <button type="submit" class="recover-button">Entrar</button>
+        <p style="color: black; text-align: center;"><strong>Esqueceu a senha?</strong></p>
+        <a href=""><p style="color: #DA4C4C; text-align: center;">Clique aqui</p></a>
       </form>
+      
     </div>
+    <p style="color: black; text-align: center;"><strong>Ainda não tem cadastro?</strong></p>
+    <a href=""><p style="color: #DA4C4C; text-align: center;">Clique aqui</p></a>
   </body>
 </ion-content>
 
 <footer class="footer">
   <div class="footer-toolbar">
     <div class="footer-buttons footer-start">
-      <button class="footer-button">
+      <button class="footer-button"
+      [routerLink]="['/home']">
         <img src="assets/home.png" alt="Botão 1" class="footer-img"/>
       </button>
     </div>
     <div class="footer-buttons footer-end">
-      <button class="footer-button">
+      <button class="footer-button" 
+      [routerLink]="['/login']">
         <img src="assets/profile.png" alt="Botão 2" class="footer-img"/>
       </button>
     </div>
     <div>
-      <button class="footer-button">
+      <button class="footer-button"
+      [routerLink]="['/pesquisar']">
         <img src="assets/search.png" alt="Botão 3" class="footer-img"/>
       </button>
     </div>
   </div>
 </footer>
-

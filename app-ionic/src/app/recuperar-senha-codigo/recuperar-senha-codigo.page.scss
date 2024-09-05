@@ -61,8 +61,6 @@
     height: auto;
     margin: 1rem;
 }
-  
-// CSS da página recuperar a senha
 
 body {
     font-family: 'Roboto', sans-serif; /* Usa a fonte Roboto */
@@ -173,4 +171,16 @@ body {
 
 .recover-button:hover {
     background-color: #e23e3e;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+  
+input[type="text"]:focus {
+    border-color: #007bff;
+    outline: none;
 }
