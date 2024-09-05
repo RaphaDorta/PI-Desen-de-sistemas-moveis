@@ -1,0 +1,59 @@
+ion-content {
+    --background: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .icon {
+    width: 80px;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  
+  h2 {
+    color: #d9534f; /* Cor vermelha */
+    font-weight: bold;
+    margin-top: 1rem;
+  }
+  
+  p {
+    color: #666;
+    margin-top: 0.5rem;
+    font-size: 1rem;
+  }
+  
+  ion-button {
+    margin-top: 1rem;
+  }
+  
+  .footer-toolbar {
+    display: flex;
+    justify-content: space-around; /* Distribui os itens do rodapé */
+    align-items: center; /* Alinha verticalmente os itens */
+    width: 75%; /* Garante que o toolbar ocupe toda a largura do footer */
+}
+  
+.footer-buttons {
+    display: flex;
+}
+  
+.footer-start,
+.footer-end {
+    display: flex;
+}
+  
+.footer-button {
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0 0.5rem;
+    cursor: pointer;
+}
+  
+.footer-img {
+    width: 36px; /* Ajuste o tamanho das imagens conforme necessário */
+    height: auto;
+    margin: 1rem;
+}
+  
