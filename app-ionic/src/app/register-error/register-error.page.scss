@@ -1,0 +1,40 @@
+ion-content {
+    --background: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  h2 {
+    color: #d9534f; /* Cor vermelha para a mensagem de erro */
+    font-weight: bold;
+    margin-top: 1rem;
+  }
+  
+  p {
+    color: #666;
+    margin-top: 0.5rem;
+    font-size: 1rem;
+  }
+  
+  ion-button {
+    margin-top: 1rem;
+  }
+  
+  ion-footer {
+    ion-toolbar {
+      justify-content: space-between;
+    }
+  }
+  image{
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+  justify-content: center; 
+  margin-top: 40px;
+  }
+  image img{
+  max-width: 100%; 
+  height: auto; 
+  }
+  
