@@ -1,0 +1,47 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Busca Farma</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <div class="logo-container">
+    <img src="assets/codigo-inv.png" alt="Icone de Código Inválido" class="icon-image">
+  </div>
+  
+  <h2 class="title">Código inválido!!</h2>
+  
+  <p class="description">
+    Por favor, verifique o código enviado para o seu e-mail e tente novamente.
+  </p>
+
+  <div class="button-container">
+    <ion-button expand="block" color="danger">Retornar</ion-button>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-toolbar">
+      <div class="footer-buttons footer-start">
+        <button class="footer-button"
+        [routerLink]="['/home']">
+          <img src="assets/search.png" alt="Botão 1" class="footer-img"/>
+        </button>
+      </div>
+      <div class="footer-buttons footer-end">
+        <button class="footer-button" 
+        [routerLink]="['/login']">
+          <img src="assets/home.png" alt="Botão 2" class="footer-img"/>
+        </button>
+      </div>
+      <div>
+        <button class="footer-button"
+        [routerLink]="['/pesquisar']">
+          <img src="assets/profile.png" alt="Botão 3" class="footer-img"/>
+        </button>
+      </div>
+    </div>
+  </footer>
+</ion-content>
