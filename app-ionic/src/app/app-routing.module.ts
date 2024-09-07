@@ -18,7 +18,8 @@ const routes: Routes = [
   {
     path: 'perfil',
     loadChildren: () => import('./perfil/perfil.module').then(m => m.PerfilPageModule)
-  },  {
+  },
+  {
     path: 'recuperar-senha-codigo',
     loadChildren: () => import('./recuperar-senha-codigo/recuperar-senha-codigo.module').then( m => m.RecuperarSenhaCodigoPageModule)
   },
@@ -45,6 +46,19 @@ const routes: Routes = [
   {
     path: 'atualizacao-efetuada',
     loadChildren: () => import('./atualizacao-efetuada/atualizacao-efetuada.module').then( m => m.AtualizacaoEfetuadaPageModule)
+  },
+  {
+    path: 'register-error',
+    loadChildren: () => import('./register-error/register-error.module').then( m => m.RegisterErrorPageModule)
+  },
+  {
+    path: 'cadastro-sucesso',
+    loadChildren: () => import('./cadastro-sucesso/cadastro-sucesso.module').then( m => m.CadastroSucessoPageModule)
+  },
+
+  {
+    path: 'codigo-invalido',
+    loadChildren: () => import('./codigo-invalido/codigo-invalido.module').then( m => m.CodigoInvalidoPageModule)
   }
 
 ];
