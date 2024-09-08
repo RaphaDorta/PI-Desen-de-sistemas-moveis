@@ -40,19 +40,6 @@ ion-content {
  
   .custom-button {
     --color: #f6f8fc; /* Cor do texto do botão */
-    background-color: #DA4C4C; /* Cor de fundo */
-    border: none;
-    padding: 0; /* Remove o padding para deixar o botão mais fino */
-    border-radius: 4px; /* Bordas arredondadas */
-    width: 100%; /* O botão ocupará a largura total do container pai */
-    font-size: 0.75rem; /* Tamanho da fonte reduzido para manter proporção */
-    height: 24px; /* Aumenta um pouco a altura do botão */
-    line-height: 24px; /* Garante que o texto esteja centralizado verticalmente */
-    margin-top: 25px; /* Espaçamento superior */
-    text-align: center; /* Centraliza o texto do botão */
-   
-}
+    margin-top: 25px; /* Ajuste o valor conforme necessário */
+  }
 
-.custom-button:hover {
-    background-color: #e23e3e; /* Cor de fundo ao passar o mouse */
-}
