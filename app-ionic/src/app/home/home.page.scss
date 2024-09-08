@@ -72,39 +72,3 @@ img {
   font-style: italic; /* Estilo itálico */
 }
 
-.footer {
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  background-color: #f4f4f4; /* Cor de fundo do footer */
-  border-top: 1px solid #dcdcdc; /* Borda superior */
-  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1); /* Sombra leve */
-  padding: 0.5rem;
-  display: flex;
-  justify-content: center; /* Centraliza horizontalmente o conteúdo do rodapé */
-  align-items: center; /* Alinha verticalmente os itens no centro */
-}
-
-.footer-toolbar {
-  display: flex;
-  justify-content: center; /* Centraliza os botões do toolbar */
-  width: 100%; /* Garante que o toolbar ocupe toda a largura do footer */
-}
-
-.footer-buttons {
-  display: flex;
-  justify-content: space-around; /* Distribui os botões com espaçamento igual entre eles */
-  width: 100%; /* Garante que os botões ocupem toda a largura do toolbar */
-  max-width: 300px; /* Ajusta a largura máxima para melhorar a aparência */
-}
-
-.footer-button {
-  background: none; /* Remove o fundo do botão */
-  border: none; /* Remove a borda do botão */
-  margin: 0 0.5rem; /* Adiciona espaço entre os botões */
-  cursor: pointer; /* Define o cursor como ponteiro */
-}
-
-ion-icon {
-  font-size: 24px; /* Ajusta o tamanho do ícone */
-}
