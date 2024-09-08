@@ -5,6 +5,10 @@ ion-content {
     align-items: center; /* Centraliza horizontalmente o conteúdo */
     padding: 0; /* Remove o padding padrão para controle total do layout */
   }
+  .back-icon {
+    color: white; /* Cor branca para o ícone */
+    font-size: 24px; /* Ajusta o tamanho do ícone */
+}
   
   .content-wrapper {
     display: flex;
@@ -60,4 +64,46 @@ ion-content {
     --padding-bottom: 3px; /* Padding inferior para ajustar a altura do botão */
   
   }
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #f4f4f4; /* Cor de fundo do footer */
+    border-top: 1px solid #dcdcdc; /* Borda superior */
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1); /* Sombra leve */
+    padding: 0.5rem;
+    display: flex;
+    justify-content: space-around; /* Distribui os itens nas extremidades */
+    align-items: center; /* Alinha os itens verticalmente no centro */
+}
   
+  .footer-toolbar {
+    display: flex;
+    justify-content: space-around; /* Distribui os itens do rodapé */
+    align-items: center; /* Alinha verticalmente os itens */
+    width: 100%; /* Garante que o toolbar ocupe toda a largura do footer */
+}
+  
+.footer-buttons {
+    display: flex;
+}
+  
+.footer-start,
+.footer-end {
+    display: flex;
+}
+  
+.footer-button {
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0 0.5rem;
+    cursor: pointer;
+}
+  
+.footer-img {
+    width: 36px; 
+    height: auto;
+    margin: 1rem;
+}
