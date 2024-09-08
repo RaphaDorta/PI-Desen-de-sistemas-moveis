@@ -1,9 +1,11 @@
+
+
 ion-content {
   display: flex;
   flex-direction: column; /* Alinha os filhos em coluna */
   justify-content: center; /* Centraliza verticalmente o conteúdo */
   align-items: center; /* Centraliza horizontalmente o conteúdo */
-  height: 100vh; /* Garante que o conteúdo ocupe a altura total da viewport */
+  height: calc(100vh - 56px); /* Ajusta a altura para considerar o cabeçalho e rodapé */
   padding: 0; /* Remove o padding padrão */
   text-align: center; /* Centraliza o texto dentro do conteúdo */
 }
@@ -18,7 +20,6 @@ img {
   height: auto; /* Mantém a proporção da imagem */
 }
 
-
 .title {
   font-size: 1.5rem; /* Tamanho da fonte do título */
   margin-top: 70px; /* Espaçamento acima do título para movê-lo para baixo */
@@ -27,20 +28,12 @@ img {
   font-weight: bold; /* Torna a fonte mais grossa */
 }
 
-
-
-
 .description {
   font-size: 1.1rem; /* Tamanho da fonte */
   color: var(--ion-color-secondary); /* Usando a cor secundária */
   margin: 0 20px; /* Adiciona espaçamento lateral */
   margin-top: 10px; /* Adiciona espaçamento acima do texto para movê-lo para baixo */
 }
-
-
-
-
-
 
 .feedback-section {
   background-color: rgba(71, 71, 71, 0.1); /* Cor primária com um tom muito mais claro e translúcido */
@@ -52,7 +45,7 @@ img {
 }
 
 .feedback-section h3 {
-  color: #865656; /* Cor branca para o título */
+  color: #865656; /* Cor para o título */
   margin-bottom: 20px; /* Espaçamento abaixo do título */
   font-size: 1.2rem; /* Tamanho da fonte do título */
   font-weight: bold; /* Tamanho da fonte */
@@ -77,4 +70,41 @@ img {
   font-size: 0.9rem; /* Tamanho da fonte do autor */
   color: var(--ion-color-medium); /* Cor do texto do autor */
   font-style: italic; /* Estilo itálico */
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #f4f4f4; /* Cor de fundo do footer */
+  border-top: 1px solid #dcdcdc; /* Borda superior */
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1); /* Sombra leve */
+  padding: 0.5rem;
+  display: flex;
+  justify-content: center; /* Centraliza horizontalmente o conteúdo do rodapé */
+  align-items: center; /* Alinha verticalmente os itens no centro */
+}
+
+.footer-toolbar {
+  display: flex;
+  justify-content: center; /* Centraliza os botões do toolbar */
+  width: 100%; /* Garante que o toolbar ocupe toda a largura do footer */
+}
+
+.footer-buttons {
+  display: flex;
+  justify-content: space-around; /* Distribui os botões com espaçamento igual entre eles */
+  width: 100%; /* Garante que os botões ocupem toda a largura do toolbar */
+  max-width: 300px; /* Ajusta a largura máxima para melhorar a aparência */
+}
+
+.footer-button {
+  background: none; /* Remove o fundo do botão */
+  border: none; /* Remove a borda do botão */
+  margin: 0 0.5rem; /* Adiciona espaço entre os botões */
+  cursor: pointer; /* Define o cursor como ponteiro */
+}
+
+ion-icon {
+  font-size: 24px; /* Ajusta o tamanho do ícone */
 }
