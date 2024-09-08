@@ -1,0 +1,72 @@
+ion-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centraliza verticalmente o conteúdo */
+    align-items: center; /* Centraliza horizontalmente o conteúdo */
+    padding: 0; /* Remove o padding padrão para controle total do layout */
+  }
+  
+  .content-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centraliza verticalmente o conteúdo dentro do wrapper */
+    align-items: center; /* Centraliza horizontalmente o conteúdo dentro do wrapper */
+    width: 100%; /* Garante que o wrapper ocupe a largura total */
+    max-width: 500px; /* Define uma largura máxima para o wrapper */
+    margin: 0 auto; /* Centraliza horizontalmente o wrapper */
+  }
+  
+  .centered-image {
+    max-width: 100%; /* Ajusta a largura da imagem para se adaptar à tela */
+    height: auto; /* Mantém a proporção da imagem */
+    margin-top: 70px; /* Ajusta o espaçamento acima da imagem */
+    margin-bottom: 10px; /* Reduz o espaçamento abaixo da imagem para aproximar o texto */
+  }
+  
+  .image-caption {
+    color: var(--ion-color-primary); /* Cor primária para o texto "Cadastro" */
+    font-size: 1.5rem; /* Aumenta o tamanho da fonte para o texto "Cadastro" */
+    font-weight: bold; /* Fonte em negrito */
+    margin-bottom: 20px; /* Espaçamento abaixo do texto */
+    margin-top: 15px; /* Espaçamento acima do texto para movê-lo mais para cima */
+    align-items: center; /* Centraliza horizontalmente o conteúdo dentro do wrapper */
+  }
+  
+  .form-container {
+    width: 100%; /* Garante que o formulário ocupe a largura total do container */
+    padding: 20px; /* Adiciona espaçamento interno ao formulário */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra ao redor do formulário */
+    background-color: #fff; /* Define o fundo branco para o formulário */
+    border-radius: 8px; /* Adiciona bordas arredondadas */
+    margin-top: 97px; /* Adiciona espaço acima do formulário para movê-lo mais para baixo */
+  }
+  
+  ion-item {
+    margin-bottom: 1px; /* Espaçamento entre os itens do formulário */
+  }
+  
+  
+  
+  .button-container {
+    margin-top: 20px; /* Espaçamento acima do botão */
+  }
+  
+  .submit-button {
+    --background: var(--ion-color-primary); /* Cor de fundo do botão */
+    --color: #fff; /* Cor do texto do botão */
+    --padding-start: 0; /* Remove o padding inicial para um estilo mais limpo */
+    --padding-end: 0; /* Remove o padding final para um estilo mais limpo */
+    --padding-top: 3px; /* Padding superior para ajustar a altura do botão */
+    --padding-bottom: 3px; /* Padding inferior para ajustar a altura do botão */
+  
+  }
+  
+  
+  .password-instructions {
+    color: var(--ion-color-secondary); /* Usando a cor secundária */
+    font-size: 0.7rem; /* Tamanho da fonte um pouco menor que o padrão */
+    margin-top: 5px; /* Espaçamento acima das instruções */
+    margin-bottom: 20px; /* Espaçamento abaixo das instruções */
+    text-align: right; /* Alinha o texto à esquerda */
+  }
+  

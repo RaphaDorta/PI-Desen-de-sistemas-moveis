@@ -59,7 +59,15 @@ const routes: Routes = [
   {
     path: 'codigo-invalido',
     loadChildren: () => import('./codigo-invalido/codigo-invalido.module').then( m => m.CodigoInvalidoPageModule)
+  },  {
+    path: 'cadastro',
+    loadChildren: () => import('./cadastro/cadastro.module').then( m => m.CadastroPageModule)
+  },
+  {
+    path: 'cadastro-senha',
+    loadChildren: () => import('./cadastro-senha/cadastro-senha.module').then( m => m.CadastroSenhaPageModule)
   }
+
 
 ];
 
