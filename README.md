@@ -1,14 +1,14 @@
-# 📱 Projeto de App de Saúde - Medicamentos de Alto Custo
+# 📱 Projeto de App de Saúde - Consulta de Medicamentos
 
-Bem-vindo ao nosso projeto desenvolvido para o **Projeto Integrador** do 4° semestre no **Centro Universitário Senac**! Nosso app tem como objetivo ajudar usuários a verificar a disponibilidade de medicamentos de alto custo nos postos de saúde.
+Bem-vindo ao nosso projeto desenvolvido para o **Projeto Integrador** do 4° semestre no **Centro Universitário Senac**! Nosso app tem como objetivo ajudar usuários a verificar a disponibilidade de medicamentos nos postos de saúde.
 
 ## 🎯 Objetivo do Projeto
 
-O app foi criado para facilitar o acesso à informação sobre a disponibilidade de medicamentos de alto custo, permitindo que os usuários economizem tempo ao saber exatamente onde encontrar seus remédios necessários.
+O app foi criado para facilitar o acesso à informação sobre a disponibilidade de medicamentos, permitindo que os usuários economizem tempo ao saber exatamente onde encontrar seus remédios necessários.
 
 ## 🚀 Funcionalidades Principais
 
-- **🔍 Consulta de Disponibilidade**: Verifique se o medicamento de alto custo está disponível para retirada em um posto de saúde próximo.
+- **🔍 Consulta de Disponibilidade**: Verifique se o medicamento está disponível para retirada em um posto de saúde próximo.
 - **📍 Localização dos Postos**: Encontre o posto de saúde mais próximo com base na sua localização atual.
 
 ## 🛠️ Tecnologias Utilizadas
