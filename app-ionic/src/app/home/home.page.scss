@@ -1,4 +1,5 @@
-
+/* Importa a fonte Roboto do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 ion-content {
   display: flex;
@@ -8,6 +9,7 @@ ion-content {
   height: calc(100vh - 56px); /* Ajusta a altura para considerar o cabeçalho e rodapé */
   padding: 0; /* Remove o padding padrão */
   text-align: center; /* Centraliza o texto dentro do conteúdo */
+  font-family: 'Roboto', sans-serif; /* Usa a fonte Roboto */
 }
 
 .image-container {
@@ -71,6 +73,77 @@ img {
   color: var(--ion-color-medium); /* Cor do texto do autor */
   font-style: italic; /* Estilo itálico */
 }
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #f4f4f4; /* Cor de fundo do footer */
+  border-top: 1px solid #dcdcdc; /* Borda superior */
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1); /* Sombra leve */
+  padding: 0.5rem;
+  display: flex;
+  justify-content: space-around; /* Distribui os itens nas extremidades */
+  align-items: center; /* Alinha os itens verticalmente no centro */
+}
+
+.footer-toolbar {
+  display: flex;
+  justify-content: space-around; /* Distribui os itens do rodapé */
+  align-items: center; /* Alinha verticalmente os itens */
+  width: 75%; /* Garante que o toolbar ocupe toda a largura do footer */
+}
+
+.footer-buttons {
+  display: flex;
+}
+
+.footer-start,
+.footer-end {
+  display: flex;
+}
+
+.footer-button {
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0 0.5rem;
+  cursor: pointer;
+}
+
+.footer-img {
+  width: 36px; /* Ajuste o tamanho das imagens conforme necessário */
+  height: auto;
+  margin: 1rem;
+}
+
+body {
+  font-family: 'Roboto', sans-serif; /* Usa a fonte Roboto */
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+.custom-content {
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto; /* Garante a rolagem vertical */
+  -webkit-overflow-scrolling: touch; /* Suaviza a rolagem no iOS */
+  height: 100vh; /* Ocupa toda a altura da tela */
+  padding-bottom: 56px; /* Adiciona um espaçamento para o footer */
+  box-sizing: border-box; /* Inclui o padding no cálculo do tamanho */
+}
+
+.content-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centraliza horizontalmente */
+  width: 100%; /* Garante que a div ocupe toda a largura */
+  padding: 20px 20px 80px 20px; /* Padding com maior espaçamento inferior */
+  background-color: #fff; /* Adiciona o fundo branco */
+  box-sizing: border-box; /* Garante que o padding seja incluído no cálculo do tamanho */
+}
+
 
 
 

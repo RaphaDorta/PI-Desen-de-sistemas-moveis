@@ -70,3 +70,45 @@ ion-content {
     text-align: right; /* Alinha o texto à esquerda */
   }
   
+  .footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #f4f4f4; /* Cor de fundo do footer */
+    border-top: 1px solid #dcdcdc; /* Borda superior */
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1); /* Sombra leve */
+    padding: 0.5rem;
+    display: flex;
+    justify-content: space-around; /* Distribui os itens nas extremidades */
+    align-items: center; /* Alinha os itens verticalmente no centro */
+}
+  
+.footer-toolbar {
+    display: flex;
+    justify-content: space-around; /* Distribui os itens do rodapé */
+    align-items: center; /* Alinha verticalmente os itens */
+    width: 75%; /* Garante que o toolbar ocupe toda a largura do footer */
+}
+  
+.footer-buttons {
+    display: flex;
+}
+  
+.footer-start,
+.footer-end {
+    display: flex;
+}
+  
+.footer-button {
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0 0.5rem;
+    cursor: pointer;
+}
+  
+.footer-img {
+    width: 36px; /* Ajuste o tamanho das imagens conforme necessário */
+    height: auto;
+    margin: 1rem;
+}
