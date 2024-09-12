@@ -1,7 +1,7 @@
 
 <ion-header>
   <ion-toolbar color="primary">
-    <ion-button slot="start" size="small" class="back-button">
+    <ion-button slot="start" size="small" class="back-button" [routerLink]="['/home']">
       <ion-icon slot="start" name="arrow-back" class="back-icon"></ion-icon>
     </ion-button>
     <ion-title color="light" class="title">BuscaFarma</ion-title>
@@ -24,9 +24,15 @@
         </div>
   
         <button type="submit" class="recover-button">Consultar</button>
-
+        
       </form>
-      
+    </div>
+
+    <!--Esse item somente aparece se o login for de adm-->
+    <div class="footer-button-container">
+      <button class="footer-button" 
+      [routerLink]="['/adicionar-remover-remedios']">
+        Adicionar/Remover Remédios</button>
     </div>
   </body>
 </ion-content>

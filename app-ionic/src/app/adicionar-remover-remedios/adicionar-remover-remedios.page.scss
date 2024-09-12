@@ -110,12 +110,10 @@ body {
   
 .form-group {
     margin-bottom: 1rem;
+    position: relative;
+    max-width: 100%; /* Garante que o container não extrapole a tela */
 }
   
-.form-group {
-    margin-bottom: 1rem;
-}
-
 .form-group label {
     display: block;
     font-size: 1rem;
@@ -197,8 +195,39 @@ input[type="date"]:focus {
     outline: none;
 }
 
-.custom-content {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
+/* Botão Adicionar */
+.add-button {
+    padding: 0.75rem;
+    border: none;
+    border-radius: 4px;
+    width: 48%;
+    font-size: 1rem;
+    color: white;
+    background-color: #4CAF50; /* Verde para adicionar */
 }
+  
+.add-button:hover {
+    background-color: #45a049; /* Verde mais escuro no hover */
+}
+  
+/* Botão Remover */
+.remove-button {
+    padding: 0.75rem;
+    border: none;
+    border-radius: 4px;
+    width: 48%;
+    font-size: 1rem;
+    color: white;
+    background-color: #DA4C4C; /* Vermelho para remover */
+}
+  
+.remove-button:hover {
+    background-color: #e23e3e; /* Vermelho mais escuro no hover */
+}
+  
+/* Estilo geral dos botões dentro do grupo */
+.button-group {
+    display: flex;
+    justify-content: space-between;
+}
+
