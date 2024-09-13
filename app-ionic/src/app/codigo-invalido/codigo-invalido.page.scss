@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 body{
-  font-family: roboto;
+  font-family: 'roboto';
 }
 ion-content {
     display: flex;
@@ -9,6 +9,7 @@ ion-content {
     justify-content: center;
     align-items: center;
     padding: 0 20px;
+}
   
     .logo-container {
       margin-top: 70px;
@@ -30,7 +31,7 @@ ion-content {
       font-size: 24px;
       color: #D9534F;
       text-align: center;
-      margin: 20px 0;
+      
     }
   
     .description {
@@ -47,8 +48,8 @@ ion-content {
     }
   
     ion-button {
-      --background: #DA4C4C;
-      --background-activated: #DA4C4C;
+      --background: #D9534F;
+      --background-activated: #D9534F;
     }
   
     ion-footer {
@@ -97,5 +98,5 @@ ion-content {
       height: auto;
       margin: 1rem;
   }
-  }
+  
   
