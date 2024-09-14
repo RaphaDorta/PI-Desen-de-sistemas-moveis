@@ -3,13 +3,13 @@ import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
   {
-    path: 'home',
-    loadChildren: () => import('./home/home.module').then(m => m.HomePageModule)
-  },
-  {
     path: '',
     redirectTo: 'home',
     pathMatch: 'full'
+  },
+  {
+    path: 'home',
+    loadChildren: () => import('./home/home.module').then(m => m.HomePageModule)
   },
   {
     path: 'recuperar-senha',
@@ -21,57 +21,56 @@ const routes: Routes = [
   },
   {
     path: 'recuperar-senha-codigo',
-    loadChildren: () => import('./recuperar-senha-codigo/recuperar-senha-codigo.module').then( m => m.RecuperarSenhaCodigoPageModule)
+    loadChildren: () => import('./recuperar-senha-codigo/recuperar-senha-codigo.module').then(m => m.RecuperarSenhaCodigoPageModule)
   },
   {
     path: 'atualizacao-cadastral',
-    loadChildren: () => import('./atualizacao-cadastral/atualizacao-cadastral.module').then( m => m.AtualizacaoCadastralPageModule)
+    loadChildren: () => import('./atualizacao-cadastral/atualizacao-cadastral.module').then(m => m.AtualizacaoCadastralPageModule)
   },
   {
     path: 'login',
-    loadChildren: () => import('./login/login.module').then( m => m.LoginPageModule)
+    loadChildren: () => import('./login/login.module').then(m => m.LoginPageModule)
   },
   {
     path: 'pesquisar',
-    loadChildren: () => import('./pesquisar/pesquisar.module').then( m => m.PesquisarPageModule)
+    loadChildren: () => import('./pesquisar/pesquisar.module').then(m => m.PesquisarPageModule)
   },
   {
     path: 'pesquisar-encontrado',
-    loadChildren: () => import('./pesquisar-encontrado/pesquisar-encontrado.module').then( m => m.PesquisarEncontradoPageModule)
+    loadChildren: () => import('./pesquisar-encontrado/pesquisar-encontrado.module').then(m => m.PesquisarEncontradoPageModule)
   },
   {
     path: 'pesquisar-erro',
-    loadChildren: () => import('./pesquisar-erro/pesquisar-erro.module').then( m => m.PesquisarErroPageModule)
+    loadChildren: () => import('./pesquisar-erro/pesquisar-erro.module').then(m => m.PesquisarErroPageModule)
   },
   {
     path: 'atualizacao-efetuada',
-    loadChildren: () => import('./atualizacao-efetuada/atualizacao-efetuada.module').then( m => m.AtualizacaoEfetuadaPageModule)
+    loadChildren: () => import('./atualizacao-efetuada/atualizacao-efetuada.module').then(m => m.AtualizacaoEfetuadaPageModule)
   },
   {
     path: 'register-error',
-    loadChildren: () => import('./register-error/register-error.module').then( m => m.RegisterErrorPageModule)
+    loadChildren: () => import('./register-error/register-error.module').then(m => m.RegisterErrorPageModule)
   },
   {
     path: 'cadastro-sucesso',
-    loadChildren: () => import('./cadastro-sucesso/cadastro-sucesso.module').then( m => m.CadastroSucessoPageModule)
+    loadChildren: () => import('./cadastro-sucesso/cadastro-sucesso.module').then(m => m.CadastroSucessoPageModule)
   },
-
   {
     path: 'codigo-invalido',
-    loadChildren: () => import('./codigo-invalido/codigo-invalido.module').then( m => m.CodigoInvalidoPageModule)
+    loadChildren: () => import('./codigo-invalido/codigo-invalido.module').then(m => m.CodigoInvalidoPageModule)
   },
   {
     path: 'cadastro',
-    loadChildren: () => import('./cadastro/cadastro.module').then( m => m.CadastroPageModule)
+    loadChildren: () => import('./cadastro/cadastro.module').then(m => m.CadastroPageModule)
   },
   {
     path: 'cadastro-senha',
-    loadChildren: () => import('./cadastro-senha/cadastro-senha.module').then( m => m.CadastroSenhaPageModule)
-  },  {
-    path: 'adicionar-remover-remedios',
-    loadChildren: () => import('./adicionar-remover-remedios/adicionar-remover-remedios.module').then( m => m.AdicionarRemoverRemediosPageModule)
+    loadChildren: () => import('./cadastro-senha/cadastro-senha.module').then(m => m.CadastroSenhaPageModule)
   },
-
+  {
+    path: 'adicionar-remover-remedios',
+    loadChildren: () => import('./adicionar-remover-remedios/adicionar-remover-remedios.module').then(m => m.AdicionarRemoverRemediosPageModule)
+  },
 ];
 
 @NgModule({
@@ -79,4 +78,3 @@ const routes: Routes = [
   exports: [RouterModule]
 })
 export class AppRoutingModule {}
-

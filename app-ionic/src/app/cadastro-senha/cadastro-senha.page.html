@@ -7,38 +7,42 @@
 </ion-header>
 
 <ion-content>
-  <div class="content-wrapper">
-    <!-- Imagem -->
-    <img src="assets/cadastro-senha.png" alt="Cadastro" class="centered-image" />
-    
- 
-    <p class="image-caption">Cadastrar Senha</p>
-
-    <!-- Formulário -->
-    <div class="form-container">
-      <ion-list>
-        <ion-item>
-          <ion-label>Senha:</ion-label>
-          <ion-input type="password"></ion-input>
-        </ion-item>
-        <ion-item>
-          <ion-label>Confirme:</ion-label>
-          <ion-input type="password"></ion-input>
-        </ion-item>
-      </ion-list>
+  <body>
+    <div class="content-wrapper">
+      <!-- Imagem -->
+      <img src="assets/cadastro-senha.png" alt="Cadastro" class="centered-image" />
       
-      <!-- Orientações de senha -->
-      <p class="password-instructions">
-        A senha deve ter no mínimo 5 caracteres.
-      </p>
-
-      <!-- Botão Cadastrar -->
-      <div class="button-container">
-        <ion-button expand="full" class="submit-button">Concluir</ion-button>
+      <p class="image-caption">Cadastrar Senha</p>
+      
+      <!-- Formulário -->
+      <div class="form-container">
+        <form (ngSubmit)="concluirCadastro()">
+          <ion-list>
+            <ion-item>
+              <ion-label>Senha:</ion-label>
+              <ion-input type="password" [(ngModel)]="senha" name="senha" required></ion-input>
+            </ion-item>
+            <ion-item>
+              <ion-label>Confirme:</ion-label>
+              <ion-input type="password" [(ngModel)]="confirmacaoSenha" name="confirmacaoSenha" required></ion-input>
+            </ion-item>
+          </ion-list>
+          
+          <!-- Orientações de senha -->
+          <p class="password-instructions">
+            A senha deve ter no mínimo 5 caracteres.
+          </p>
+          
+          <!-- Botão Cadastrar -->
+          <div class="button-container">
+            <ion-button expand="full" class="submit-button" type="submit">Concluir</ion-button>
+          </div>
+        </form>
       </div>
     </div>
-  </div>
+  </body>
 </ion-content>
+
 
 <footer class="footer">
   <div class="footer-toolbar">

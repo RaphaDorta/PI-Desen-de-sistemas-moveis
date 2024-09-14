@@ -6,6 +6,10 @@ ion-content {
     padding: 0; /* Remove o padding padrão para controle total do layout */
   }
   
+body {
+  background-color: #fff;
+}
+
   .content-wrapper {
     display: flex;
     flex-direction: column;

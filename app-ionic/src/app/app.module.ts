@@ -11,14 +11,14 @@ import { AppRoutingModule } from './app-routing.module';
 @NgModule({
   declarations: [
     AppComponent
-    // Não declare PesquisarPage aqui se já está em PesquisarPageModule
+    // Outros componentes que você pode ter, se necessários
   ],
   imports: [
     BrowserModule,
     HttpClientModule, // Adicionar HttpClientModule aqui
     IonicModule.forRoot(),
     AppRoutingModule
-    // Importe PesquisarPageModule se necessário
+    // Importe outros módulos se necessário
   ],
   providers: [
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
