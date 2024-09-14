@@ -13,7 +13,7 @@
       <img src="assets/perfil.png" alt="recuperar senha">
       <h1>Seus Dados</h1>
     </header>
-  
+    
     <div class="container">
       <table id="userTable">
         <thead>
@@ -25,19 +25,19 @@
         <tbody>
           <tr>
             <td><strong>Nome</strong></td>
-            <td id="nome"></td>
+            <td>{{ userData.nome }}</td>
           </tr>
           <tr>
             <td><strong>Email</strong></td>
-            <td id="email"></td>
+            <td>{{ userData.email }}</td>
           </tr>
           <tr>
             <td><strong>CPF</strong></td>
-            <td id="cpf"></td>
+            <td>{{ userData.cpf }}</td>
           </tr>
           <tr>
             <td><strong>Nascimento</strong></td>
-            <td id="dataNascimento"></td>
+            <td>{{ userData.dataNascimento }}</td>
           </tr>
         </tbody>
       </table>

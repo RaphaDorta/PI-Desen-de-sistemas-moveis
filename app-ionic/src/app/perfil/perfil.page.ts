@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { UserService } from '../user.service'; // Ajuste o caminho conforme necessário
 
 @Component({
   selector: 'app-perfil',
@@ -6,10 +7,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./perfil.page.scss'],
 })
 export class PerfilPage implements OnInit {
+  userData: any = {}; // Inicialize com um objeto vazio
 
-  constructor() { }
+  constructor(private userService: UserService) { }
 
   ngOnInit() {
+    this.userService.getUserData().subscribe(data => {
+      this.userData = data;
+    });
   }
-
 }
+
