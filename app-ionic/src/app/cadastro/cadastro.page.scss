@@ -9,6 +9,10 @@ ion-content {
     color: white; /* Cor branca para o ícone */
     font-size: 24px; /* Ajusta o tamanho do ícone */
 }
+
+  ion-label{
+    padding-right: 50px;
+  }
   
   .content-wrapper {
     display: flex;
