@@ -1,0 +1,84 @@
+08:13:26  [main] 	Initializing Control Panel
+08:13:26  [main] 	Windows Version:  Home  64-bit
+08:13:26  [main] 	XAMPP Version: 8.2.12
+08:13:26  [main] 	Control Panel Version: 3.3.0  [ Compiled: Apr 6th 2021 ]
+08:13:26  [main] 	You are not running with administrator rights! This will work for
+08:13:26  [main] 	most application stuff but whenever you do something with services
+08:13:26  [main] 	there will be a security dialogue or things will break! So think 
+08:13:26  [main] 	about running this application with administrator rights!
+08:13:26  [main] 	XAMPP Installation Directory: "c:\users\rapha\onedrive\documentos\projeto_inegrador\pi-desen-de-sistemas-moveis\backend\xampp\"
+08:13:26  [main] 	Checking for prerequisites
+08:13:26  [main] 	All prerequisites found
+08:13:26  [main] 	Initializing Modules
+08:13:26  [Apache] 	Problem detected!
+08:13:26  [Apache] 	Port 80 in use by "C:\xampp\apache\bin\httpd.exe" with PID 3920!
+08:13:26  [Apache] 	Apache WILL NOT start without the configured ports free!
+08:13:26  [Apache] 	You need to uninstall/disable/reconfigure the blocking application
+08:13:26  [Apache] 	or reconfigure Apache and the Control Panel to listen on a different port
+08:13:26  [Apache] 	Problem detected!
+08:13:26  [Apache] 	Port 443 in use by "C:\xampp\apache\bin\httpd.exe" with PID 3920!
+08:13:26  [Apache] 	Apache WILL NOT start without the configured ports free!
+08:13:26  [Apache] 	You need to uninstall/disable/reconfigure the blocking application
+08:13:26  [Apache] 	or reconfigure Apache and the Control Panel to listen on a different port
+08:13:26  [mysql] 	Problem detected!
+08:13:26  [mysql] 	Port 3306 in use by "C:\xampp\mysql\bin\mysqld.exe"!
+08:13:26  [mysql] 	MySQL WILL NOT start without the configured ports free!
+08:13:26  [mysql] 	You need to uninstall/disable/reconfigure the blocking application
+08:13:26  [mysql] 	or reconfigure MySQL and the Control Panel to listen on a different port
+08:13:26  [main] 	Starting Check-Timer
+08:13:26  [main] 	Control Panel Ready
+08:13:28  [Apache] 	Problem detected!
+08:13:28  [Apache] 	Port 80 in use by "C:\xampp\apache\bin\httpd.exe" with PID 3920!
+08:13:28  [Apache] 	Apache WILL NOT start without the configured ports free!
+08:13:28  [Apache] 	You need to uninstall/disable/reconfigure the blocking application
+08:13:28  [Apache] 	or reconfigure Apache and the Control Panel to listen on a different port
+08:13:28  [Apache] 	Problem detected!
+08:13:28  [Apache] 	Port 443 in use by "C:\xampp\apache\bin\httpd.exe" with PID 3920!
+08:13:28  [Apache] 	Apache WILL NOT start without the configured ports free!
+08:13:28  [Apache] 	You need to uninstall/disable/reconfigure the blocking application
+08:13:28  [Apache] 	or reconfigure Apache and the Control Panel to listen on a different port
+08:13:28  [Apache] 	Attempting to start Apache app...
+08:13:28  [Apache] 	Status change detected: running
+08:13:28  [mysql] 	Problem detected!
+08:13:28  [mysql] 	Port 3306 in use by "C:\xampp\mysql\bin\mysqld.exe"!
+08:13:28  [mysql] 	MySQL WILL NOT start without the configured ports free!
+08:13:28  [mysql] 	You need to uninstall/disable/reconfigure the blocking application
+08:13:28  [mysql] 	or reconfigure MySQL and the Control Panel to listen on a different port
+08:13:28  [mysql] 	Attempting to start MySQL app...
+08:13:29  [Apache] 	Status change detected: stopped
+08:13:29  [Apache] 	Error: Apache shutdown unexpectedly.
+08:13:29  [Apache] 	This may be due to a blocked port, missing dependencies, 
+08:13:29  [Apache] 	improper privileges, a crash, or a shutdown by another method.
+08:13:29  [Apache] 	Press the Logs button to view error logs and check
+08:13:29  [Apache] 	the Windows Event Viewer for more clues
+08:13:29  [Apache] 	If you need more help, copy and post this
+08:13:29  [Apache] 	entire log window on the forums
+08:13:29  [mysql] 	Status change detected: running
+08:13:29  [mysql] 	Status change detected: stopped
+08:13:29  [mysql] 	Error: MySQL shutdown unexpectedly.
+08:13:29  [mysql] 	This may be due to a blocked port, missing dependencies, 
+08:13:29  [mysql] 	improper privileges, a crash, or a shutdown by another method.
+08:13:29  [mysql] 	Press the Logs button to view error logs and check
+08:13:29  [mysql] 	the Windows Event Viewer for more clues
+08:13:29  [mysql] 	If you need more help, copy and post this
+08:13:29  [mysql] 	entire log window on the forums
+08:13:31  [Apache] 	Problem detected!
+08:13:31  [Apache] 	Port 80 in use by "C:\xampp\apache\bin\httpd.exe" with PID 3920!
+08:13:31  [Apache] 	Apache WILL NOT start without the configured ports free!
+08:13:31  [Apache] 	You need to uninstall/disable/reconfigure the blocking application
+08:13:31  [Apache] 	or reconfigure Apache and the Control Panel to listen on a different port
+08:13:31  [Apache] 	Problem detected!
+08:13:31  [Apache] 	Port 443 in use by "C:\xampp\apache\bin\httpd.exe" with PID 3920!
+08:13:31  [Apache] 	Apache WILL NOT start without the configured ports free!
+08:13:31  [Apache] 	You need to uninstall/disable/reconfigure the blocking application
+08:13:31  [Apache] 	or reconfigure Apache and the Control Panel to listen on a different port
+08:13:31  [Apache] 	Attempting to start Apache app...
+08:13:31  [mysql] 	Problem detected!
+08:13:31  [mysql] 	Port 3306 in use by "C:\xampp\mysql\bin\mysqld.exe"!
+08:13:31  [mysql] 	MySQL WILL NOT start without the configured ports free!
+08:13:31  [mysql] 	You need to uninstall/disable/reconfigure the blocking application
+08:13:31  [mysql] 	or reconfigure MySQL and the Control Panel to listen on a different port
+08:13:31  [mysql] 	Attempting to start MySQL app...
+08:41:37  [main] 	Deinitializing Modules
+08:41:37  [main] 	Deinitializing Control Panel
+
