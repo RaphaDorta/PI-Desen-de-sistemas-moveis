@@ -2,18 +2,17 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { IonicModule } from '@ionic/angular';
-import { RouterModule } from '@angular/router'; // Importar o RouterModule
+import { RouterModule } from '@angular/router';
 
-import { PesquisarPage } from './pesquisar.page'; // Corrija o nome do componente se necessário
+import { PesquisarPage } from './pesquisar.page';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    RouterModule // Adicionar o RouterModule aqui
+    RouterModule.forChild([{ path: '', component: PesquisarPage }]) // Configuração da rota específica
   ],
-  declarations: [PesquisarPage],
-  exports: [PesquisarPage] // Se necessário para outros módulos
+  declarations: [PesquisarPage]
 })
-export class PesquisarPageModule { }
+export class PesquisarPageModule {}

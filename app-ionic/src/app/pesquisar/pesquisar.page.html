@@ -11,31 +11,31 @@
 <ion-content [fullscreen]="true" class="custom-content">
   <body>
     <header class="header">
-      <img src="assets/pesquisar_logo.png" alt="recuperar senha">
+      <img src="assets/pesquisar_logo.png" alt="pesquisar remédio">
       <h1>Pesquisar remédio</h1>
       <p class="subtitle">Pesquise aqui para verificar a disponibilidade do seu medicamento. Basta digitar o nome do remédio e conferir se ele está em estoque</p>
     </header>
-  
+    
     <div class="container">
-      <form>
+      <form (ngSubmit)="onSubmit()">
         <div class="form-group">
-          <label for="email">Digite o nome do remédio</label>
-          <input type="text" id="text" required>
+          <label for="text">Digite o nome do remédio</label>
+          <input type="text" id="text" [(ngModel)]="searchTerm" name="text" required>
         </div>
-  
-        <button type="submit" class="recover-button">Consultar</button>
         
+        <button type="submit" class="recover-button">Consultar</button>
       </form>
     </div>
 
     <!--Esse item somente aparece se o login for de adm-->
-    <div class="footer-button-container">
-      <button class="footer-button" 
-      [routerLink]="['/adicionar-remover-remedios']">
-        Adicionar/Remover Remédios</button>
+    <div class="footer-button-container" *ngIf="isAdmin">
+      <button class="footer-button" [routerLink]="['/adicionar-remover-remedios']">
+        Adicionar/Remover Remédios
+      </button>
     </div>
   </body>
 </ion-content>
+
 
 <footer class="footer">
   <div class="footer-toolbar">
