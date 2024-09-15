@@ -1,0 +1,59 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title color="light">
+      BuscaFarma
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="custom-content">
+  <div class="content-wrapper">
+    <!-- imagem -->
+    <div class="image-container">
+      <!-- Imagem -->
+      <img src="assets/capa-inicio.png" alt="Capa Início" />
+    </div>
+
+    <!-- Título -->
+    <h2 class="title">Bem-vindo à Nossa Plataforma!</h2>
+
+    <!-- Texto explicativo -->
+    <p class="description">
+      Fique no controle da sua saúde sem sair de casa! Descubra se os medicamentos que você precisa estão disponíveis com apenas alguns toques.
+    </p>
+
+    <!-- Seção de Feedback -->
+    <div class="feedback-section">
+      <h3></h3>
+      <div class="feedback-item">
+        <p class="feedback-text">"Excelente aplicativo! Facilitou muito minha rotina de medicamentos."</p>
+        <p class="feedback-author">- João Silva</p>
+      </div>
+      <div class="feedback-item">
+        <p class="feedback-text">"Muito útil e fácil de usar. Recomendo a todos!"</p>
+        <p class="feedback-author">- Maria Oliveira</p>
+      </div>
+    </div>
+  </div>
+</ion-content>
+
+<footer class="footer">
+  <div class="footer-toolbar">
+    <div class="footer-buttons footer-start">
+      <button class="footer-button" [routerLink]="['/home']">
+        <img src="assets/home.png" alt="Botão 1" class="footer-img"/>
+      </button>
+    </div>
+    <div class="footer-buttons footer-end">
+      <button class="footer-button" [routerLink]="['/login']">
+        <img src="assets/profile.png" alt="Botão 2" class="footer-img"/>
+      </button>
+    </div>
+    <div>
+      <button class="footer-button" [routerLink]="['/pesquisar']">
+        <img src="assets/search.png" alt="Botão 3" class="footer-img"/>
+      </button>
+    </div>
+  </div>
+</footer>
+

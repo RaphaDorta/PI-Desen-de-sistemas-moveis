@@ -1,0 +1,61 @@
+
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-button slot="start" size="small" class="back-button" [routerLink]="['/home']">
+      <ion-icon slot="start" name="arrow-back" class="back-icon"></ion-icon>
+    </ion-button>
+    <ion-title color="light" class="title">BuscaFarma</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="custom-content">
+  <body>
+    <header class="header">
+      <img src="assets/pesquisar_logo.png" alt="pesquisar remédio">
+      <h1>Pesquisar remédio</h1>
+      <p class="subtitle">Pesquise aqui para verificar a disponibilidade do seu medicamento. Basta digitar o nome do remédio e conferir se ele está em estoque</p>
+    </header>
+    
+    <div class="container">
+      <form (ngSubmit)="onSubmit()">
+        <div class="form-group">
+          <label for="text">Digite o nome do remédio</label>
+          <input type="text" id="text" [(ngModel)]="searchTerm" name="text" required>
+        </div>
+        
+        <button type="submit" class="recover-button">Consultar</button>
+      </form>
+    </div>
+
+    <!--Esse item somente aparece se o login for de adm-->
+    <div class="footer-button-container" *ngIf="isAdmin">
+      <button class="footer-button" [routerLink]="['/adicionar-remover-remedios']">
+        Adicionar/Remover Remédios
+      </button>
+    </div>
+  </body>
+</ion-content>
+
+
+<footer class="footer">
+  <div class="footer-toolbar">
+    <div class="footer-buttons footer-start">
+      <button class="footer-button"
+      [routerLink]="['/home']">
+        <img src="assets/home.png" alt="Botão 1" class="footer-img"/>
+      </button>
+    </div>
+    <div class="footer-buttons footer-end">
+      <button class="footer-button" 
+      [routerLink]="['/login']">
+        <img src="assets/profile.png" alt="Botão 2" class="footer-img"/>
+      </button>
+    </div>
+    <div>
+      <button class="footer-button"
+      [routerLink]="['/pesquisar']">
+        <img src="assets/search.png" alt="Botão 3" class="footer-img"/>
+      </button>
+    </div>
+  </div>
+</footer>

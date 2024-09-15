@@ -1,0 +1,72 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-button slot="start" size="small" class="back-button" [routerLink]="['/home']">
+      <ion-icon slot="start" name="arrow-back" class="back-icon"></ion-icon>
+    </ion-button>
+    <ion-title color="light" class="title">BuscaFarma</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="custom-content">
+  <body>
+    <header class="header">
+      <img src="assets/perfil.png" alt="recuperar senha">
+      <h1>Seus Dados</h1>
+    </header>
+    
+    <div class="container">
+      <table id="userTable">
+        <thead>
+          <tr>
+            <th>Campo</th>
+            <th>Valor</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Nome</strong></td>
+            <td>{{ userData.nome }}</td>
+          </tr>
+          <tr>
+            <td><strong>Email</strong></td>
+            <td>{{ userData.email }}</td>
+          </tr>
+          <tr>
+            <td><strong>CPF</strong></td>
+            <td>{{ userData.cpf }}</td>
+          </tr>
+          <tr>
+            <td><strong>Nascimento</strong></td>
+            <td>{{ userData.dataNascimento }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="container">
+      <button type="submit" class="recover-button" [routerLink]="['/atualizacao-cadastral']">Alterar dados</button>
+    </div>
+  </body>
+</ion-content>
+
+<footer class="footer">
+  <div class="footer-toolbar">
+    <div class="footer-buttons footer-start">
+      <button class="footer-button"
+      [routerLink]="['/home']">
+        <img src="assets/home.png" alt="Botão 1" class="footer-img"/>
+      </button>
+    </div>
+    <div class="footer-buttons footer-end">
+      <button class="footer-button" 
+      [routerLink]="['/home']">
+        <img src="assets/profile.png" alt="Botão 2" class="footer-img"/>
+      </button>
+    </div>
+    <div>
+      <button class="footer-button"
+      [routerLink]="['/pesquisar']">
+        <img src="assets/search.png" alt="Botão 3" class="footer-img"/>
+      </button>
+    </div>
+  </div>
+</footer>

@@ -1,0 +1,49 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-button slot="start" size="small" class="back-button" [routerLink]="['/home']">
+      <ion-icon slot="start" name="arrow-back" class="back-icon"></ion-icon>
+    </ion-button>
+    <ion-title>BuscaFarma</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid>
+    <ion-row class="ion-justify-content-center ion-align-items-center">
+      <ion-col size="13" class="ion-text-center">
+        <img src="assets/door.png" alt="Ícone de sucesso" class="icon">
+        <h2>Cadastro efetuado com sucesso!</h2>
+        <p>Agora você pode consultar se os seus remédios estão disponíveis em nossos estoques!</p>
+        <p>Clique para voltar à tela inicial</p>
+      </ion-col>
+    </ion-row>
+    <ion-row class="ion-justify-content-center">
+      <ion-col size="auto">
+      
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
+
+<footer class="footer">
+  <div class="footer-toolbar">
+    <div class="footer-buttons footer-start">
+      <button class="footer-button"
+      [routerLink]="['/home']">
+        <img src="assets/home.png" alt="Botão 1" class="footer-img"/>
+      </button>
+    </div>
+    <div class="footer-buttons footer-end">
+      <button class="footer-button" 
+      [routerLink]="['/login']">
+        <img src="assets/profile.png" alt="Botão 2" class="footer-img"/>
+      </button>
+    </div>
+    <div>
+      <button class="footer-button"
+      [routerLink]="['/pesquisar']">
+        <img src="assets/search.png" alt="Botão 3" class="footer-img"/>
+      </button>
+    </div>
+  </div>
+</footer>

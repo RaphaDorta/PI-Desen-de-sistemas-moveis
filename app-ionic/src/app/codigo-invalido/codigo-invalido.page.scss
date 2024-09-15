@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body{
+  font-family: 'roboto';
+}
+ion-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+}
+  
+    .logo-container {
+      margin-top: 70px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .icon-image {
+      width: 100px;
+      height: 100px;
+    }
+
+   .back-button{
+      color: white;
+    }
+  
+    .title {
+      font-size: 24px;
+      color: #D9534F;
+      text-align: center;
+      
+    }
+  
+    .description {
+      font-size: 16px;
+      color: #6c757d;
+      text-align: center;
+      margin: 10px 0 30px 0;
+    }
+  
+    .button-container {
+      margin-top: 100px;
+      width: 100%;
+      text-align: center;
+    }
+  
+    ion-button {
+      --background: #D9534F;
+      --background-activated: #D9534F;
+    }
+  
+    ion-footer {
+      margin-top: 20px;
+    }
+
+    .footer {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      background-color: #f4f4f4; /* Cor de fundo do footer */
+      border-top: 1px solid #dcdcdc; /* Borda superior */
+      box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1); /* Sombra leve */
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-around; /* Distribui os itens nas extremidades */
+      align-items: center; /* Alinha os itens verticalmente no centro */
+  }
+    
+    .footer-toolbar {
+      display: flex;
+      justify-content: space-around; /* Distribui os itens do rodapé */
+      align-items: center; /* Alinha verticalmente os itens */
+      width: 100%; /* Garante que o toolbar ocupe toda a largura do footer */
+  }
+    
+  .footer-buttons {
+      display: flex;
+  }
+    
+  .footer-start,
+  .footer-end {
+      display: flex;
+  }
+    
+  .footer-button {
+      background: none;
+      border: none;
+      padding: 0;
+      margin: 0 0.5rem;
+      cursor: pointer;
+  }
+    
+  .footer-img {
+      width: 36px; 
+      height: auto;
+      margin: 1rem;
+  }
+  
+  

@@ -1,0 +1,68 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title color="light">
+      BuscaFarma
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <body>
+    <div class="content-wrapper">
+      <!-- Imagem -->
+      <img src="assets/cadastro-senha.png" alt="Cadastro" class="centered-image" />
+      
+      <p class="image-caption">Cadastrar Senha</p>
+      
+      <!-- Formulário -->
+      <div class="form-container">
+        <form (ngSubmit)="concluirCadastro()">
+          <ion-list>
+            <ion-item>
+              <ion-label>Senha:</ion-label>
+              <ion-input type="password" [(ngModel)]="senha" name="senha" required></ion-input>
+            </ion-item>
+            <ion-item>
+              <ion-label>Confirme:</ion-label>
+              <ion-input type="password" [(ngModel)]="confirmacaoSenha" name="confirmacaoSenha" required></ion-input>
+            </ion-item>
+          </ion-list>
+          
+          <!-- Orientações de senha -->
+          <p class="password-instructions">
+            A senha deve ter no mínimo 5 caracteres.
+          </p>
+          
+          <!-- Botão Cadastrar -->
+          <div class="button-container">
+            <ion-button expand="full" class="submit-button" type="submit">Concluir</ion-button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</ion-content>
+
+
+<footer class="footer">
+  <div class="footer-toolbar">
+    <div class="footer-buttons footer-start">
+      <button class="footer-button"
+      [routerLink]="['/home']">
+        <img src="assets/home.png" alt="Botão 1" class="footer-img"/>
+      </button>
+    </div>
+    <div class="footer-buttons footer-end">
+      <button class="footer-button" 
+      [routerLink]="['/login']">
+        <img src="assets/profile.png" alt="Botão 2" class="footer-img"/>
+      </button>
+    </div>
+    <div>
+      <button class="footer-button"
+      [routerLink]="['/pesquisar']">
+        <img src="assets/search.png" alt="Botão 3" class="footer-img"/>
+      </button>
+    </div>
+  </div>
+</footer>

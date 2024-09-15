@@ -1,0 +1,149 @@
+/* Importa a fonte Roboto do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+ion-content {
+  display: flex;
+  flex-direction: column; /* Alinha os filhos em coluna */
+  justify-content: center; /* Centraliza verticalmente o conteúdo */
+  align-items: center; /* Centraliza horizontalmente o conteúdo */
+  height: calc(100vh - 56px); /* Ajusta a altura para considerar o cabeçalho e rodapé */
+  padding: 0; /* Remove o padding padrão */
+  text-align: center; /* Centraliza o texto dentro do conteúdo */
+  font-family: 'Roboto', sans-serif; /* Usa a fonte Roboto */
+}
+
+.image-container {
+  margin-bottom: 40px; /* Espaçamento abaixo da imagem */
+}
+
+img {
+  margin-top: 10vh; /* Adiciona espaçamento acima da imagem */
+  max-width: 100%; /* Ajusta a largura da imagem para se adaptar à tela */
+  height: auto; /* Mantém a proporção da imagem */
+}
+
+.title {
+  font-size: 1.5rem; /* Tamanho da fonte do título */
+  margin-top: 70px; /* Espaçamento acima do título para movê-lo para baixo */
+  margin-bottom: 1px; /* Espaçamento abaixo do título */
+  color: var(--ion-color-primary); /* Usando a cor primária do tema */
+  font-weight: bold; /* Torna a fonte mais grossa */
+}
+
+.description {
+  font-size: 1.1rem; /* Tamanho da fonte */
+  color: var(--ion-color-secondary); /* Usando a cor secundária */
+  margin: 0 20px; /* Adiciona espaçamento lateral */
+  margin-top: 10px; /* Adiciona espaçamento acima do texto para movê-lo para baixo */
+}
+
+.feedback-section {
+  background-color: rgba(71, 71, 71, 0.1); /* Cor primária com um tom muito mais claro e translúcido */
+  padding: 20px; /* Espaçamento interno */
+  border-radius: 15px; /* Cantos arredondados */
+  margin-top: 30px; /* Espaçamento acima da seção */
+  text-align: center; /* Centraliza o texto */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave ao redor da seção */
+}
+
+.feedback-section h3 {
+  color: #865656; /* Cor para o título */
+  margin-bottom: 20px; /* Espaçamento abaixo do título */
+  font-size: 1.2rem; /* Tamanho da fonte do título */
+  font-weight: bold; /* Tamanho da fonte */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Sombra suave para o texto do título */
+}
+
+.feedback-item {
+  background: rgba(255, 255, 255, 0.9); /* Fundo branco levemente translúcido para os itens de feedback */
+  border-radius: 10px; /* Cantos arredondados */
+  padding: 15px; /* Espaçamento interno */
+  margin: 10px 0; /* Espaçamento entre itens */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave ao redor do item */
+}
+
+.feedback-text {
+  font-size: 1rem; /* Tamanho da fonte do feedback */
+  color: var(--ion-color-dark); /* Cor escura para o texto */
+  margin-bottom: 10px; /* Espaçamento abaixo do texto */
+}
+
+.feedback-author {
+  font-size: 0.9rem; /* Tamanho da fonte do autor */
+  color: var(--ion-color-medium); /* Cor do texto do autor */
+  font-style: italic; /* Estilo itálico */
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #f4f4f4; /* Cor de fundo do footer */
+  border-top: 1px solid #dcdcdc; /* Borda superior */
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1); /* Sombra leve */
+  padding: 0.5rem;
+  display: flex;
+  justify-content: space-around; /* Distribui os itens nas extremidades */
+  align-items: center; /* Alinha os itens verticalmente no centro */
+}
+
+.footer-toolbar {
+  display: flex;
+  justify-content: space-around; /* Distribui os itens do rodapé */
+  align-items: center; /* Alinha verticalmente os itens */
+  width: 75%; /* Garante que o toolbar ocupe toda a largura do footer */
+}
+
+.footer-buttons {
+  display: flex;
+}
+
+.footer-start,
+.footer-end {
+  display: flex;
+}
+
+.footer-button {
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0 0.5rem;
+  cursor: pointer;
+}
+
+.footer-img {
+  width: 36px; /* Ajuste o tamanho das imagens conforme necessário */
+  height: auto;
+  margin: 1rem;
+}
+
+body {
+  font-family: 'Roboto', sans-serif; /* Usa a fonte Roboto */
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+.custom-content {
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto; /* Garante a rolagem vertical */
+  -webkit-overflow-scrolling: touch; /* Suaviza a rolagem no iOS */
+  height: 100vh; /* Ocupa toda a altura da tela */
+  padding-bottom: 56px; /* Adiciona um espaçamento para o footer */
+  box-sizing: border-box; /* Inclui o padding no cálculo do tamanho */
+}
+
+.content-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centraliza horizontalmente */
+  width: 100%; /* Garante que a div ocupe toda a largura */
+  padding: 20px 20px 80px 20px; /* Padding com maior espaçamento inferior */
+  background-color: #fff; /* Adiciona o fundo branco */
+  box-sizing: border-box; /* Garante que o padding seja incluído no cálculo do tamanho */
+}
+
+
+
+

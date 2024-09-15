@@ -1,0 +1,69 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-button slot="start" size="small" class="back-button" [routerLink]="['/home']">
+      <ion-icon slot="start" name="arrow-back" class="back-icon"></ion-icon>
+    </ion-button>
+    <ion-title color="light">
+      BuscaFarma
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <body>
+    <div class="content-wrapper">
+      <img src="assets/cadastro.png" alt="Cadastro" class="centered-image" />
+      <p class="image-caption">Cadastro</p>
+      <div class="form-container">
+        <ion-list>
+          <ion-item>
+            <ion-label position="floating">Nome:</ion-label>
+            <ion-input type="text" [(ngModel)]="cadastrar.nome"></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label position="floating">Sobrenome:</ion-label>
+            <ion-input type="text" [(ngModel)]="cadastrar.sobrenome"></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label position="floating">Email:</ion-label>
+            <ion-input type="email" [(ngModel)]="cadastrar.email"></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label position="floating">CPF:</ion-label>
+            <ion-input type="text" [(ngModel)]="cadastrar.cpf"></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label position="floating">Data de Nascimento:</ion-label>
+            <ion-input type="date" [(ngModel)]="cadastrar.dataNascimento"></ion-input>
+          </ion-item>
+        </ion-list>
+        <div class="button-container">
+          <ion-button expand="full" (click)="confirmarCadastro()">Avançar</ion-button>
+        </div>
+      </div>
+    </div>
+  </body>
+</ion-content>
+  
+  <footer class="footer">
+    <div class="footer-toolbar">
+    <div class="footer-buttons footer-start">
+      <button class="footer-button"
+      [routerLink]="['/pesquisar']">
+        <img src="assets/search.png" alt="Botão 1" class="footer-img"/>
+      </button>
+    </div>
+    <div class="footer-buttons footer-end">
+      <button class="footer-button" 
+      [routerLink]="['/home']">
+        <img src="assets/home.png" alt="Botão 2" class="footer-img"/>
+      </button>
+    </div>
+    <div>
+      <button class="footer-button"
+      [routerLink]="['/login']">
+        <img src="assets/profile.png" alt="Botão 3" class="footer-img"/>
+      </button>
+    </div>
+  </div>
+</footer>
