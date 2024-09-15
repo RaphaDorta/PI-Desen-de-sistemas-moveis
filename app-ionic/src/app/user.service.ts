@@ -7,7 +7,7 @@ import { Observable } from 'rxjs';
 })
 export class UserService {
 
-  private apiUrl = 'http://localhost:3000/api/users'; // Altere para o URL da sua API
+  private apiUrl = 'http://localhost/buscaFarma/api'; // Altere para o URL da sua API
 
   constructor(private http: HttpClient) { }
 

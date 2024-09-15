@@ -7,6 +7,7 @@ import { IonicModule, IonicRouteStrategy } from '@ionic/angular';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { AppRoutingModule } from './app-routing.module';
     BrowserModule,
     HttpClientModule, // Adicionar HttpClientModule aqui
     IonicModule.forRoot(),
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
     // Importe outros módulos se necessário
   ],
   providers: [
