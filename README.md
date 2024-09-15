@@ -9,7 +9,6 @@ O app foi criado para facilitar o acesso à informação sobre a disponibilidade
 ## 🚀 Funcionalidades Principais
 
 - **🔍 Consulta de Disponibilidade**: Verifique se o medicamento está disponível para retirada em um posto de saúde próximo.
-- **📍 Localização dos Postos**: Encontre o posto de saúde mais próximo com base na sua localização atual.
 
 ## 🛠️ Tecnologias Utilizadas
 
